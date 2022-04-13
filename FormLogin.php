@@ -11,8 +11,8 @@
     <legend>Formulaire de Login</legend>
 	<input type="hidden" name="Tstamp" value="<?php time(); ?>">
     <table border=0><tr><th>Votre adresse mail</th><th>Votre mot de passe</th></tr>
-	<tr><td><input type="email" name="Mail" value="..." size="25" maxlength="64"></td>	
-		<td><input type="password" name="Mdp" value="" size="25" maxlength="25"></td></tr>
+	<tr><td><input type="email" name="Mail" value="..." size="25" maxlength="64" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required></td>	
+		<td><input type="password" name="Mdp" value="" size="25" maxlength="25" pattern="(^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,25})$)" required></td></tr>
 		<tr><td colspan=2></td></tr>
 	<tr><td><input type="submit" name="Envoi" value="Connexion..."></td><td><input type="reset" name="reset" value="Ré-initialisation"></td</tr>
 	
