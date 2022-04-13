@@ -15,6 +15,7 @@
 		<td><input type="password" name="Mdp" value="" size="25" maxlength="25" pattern="(^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,25})$)" required></td></tr>
 		<tr><td colspan=2></td></tr>
 	<tr><td><input type="submit" name="Envoi" value="Connexion..."></td><td><input type="reset" name="reset" value="Ré-initialisation"></td</tr>
+	<tr><td>Si vous n'avez pas de compte, vous pouvez le faire içi --></td><td><input type="submit" name="Inscription" value="Création d'un compte"></td></tr>
 	
 	</table>
     </fieldset>
